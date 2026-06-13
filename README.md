@@ -1,1 +1,1 @@
-#Faizan-Public-School-andCollege-Besham
+# Faizan Public School and College Besham
