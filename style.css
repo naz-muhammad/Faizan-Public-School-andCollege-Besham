@@ -21,7 +21,7 @@ header {
     align-items: center;
     width: 85%;
     margin: auto;
-    
+
 }
 
 .nav-logo h2 {
@@ -53,10 +53,11 @@ nav a:hover {
 }
 
 @media screen and (max-width: 768px) {
-    nav ul {
-        display: flex;
-        flex-wrap: wrap;
 
+    .navbar {
+        /* display: flex; */
+        flex-direction: column;
+        gap: 1rem;
     }
 }
 
@@ -64,6 +65,7 @@ nav a:hover {
 
 .hero {
     min-height: 90vh;
+    width: 100%;
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url("https://images.unsplash.com/photo-1596495578065-6e0763fa1178");
@@ -76,30 +78,106 @@ nav a:hover {
     place-items: center;
     text-align: center;
     color: white;
+    margin-bottom: 60px;
 }
 
 .hero-content h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: 700;
+    
 }
 
-.hero-content p{
+.hero-content p {
     font-size: 1.2rem;
     letter-spacing: 1px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
-.button .btn {
+.hero-button {
+    display: flex;
+    gap: .8rem;
+    justify-content: center;
+}
+
+.hero-button .btn {
     padding: .8rem 1.5rem;
     background: #ffcc00;
-    color: black;
     border: none;
-    font-weight: bold;
     border-radius: 5px;
     transition: 0.3s;
 }
 
+
+.hero-button a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
 .btn:hover {
     background: #ffcc009a;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+
+    }
+
+
+    .hero-content p {
+        padding: 0 1.2rem;
+        letter-spacing: normal;
+        font-size: 1rem;
+
+    }
+}
+
+/* About Section */
+
+
+.about-heading {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.about-para {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-card {
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-bottom: 60px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 1.8rem;
+    border-radius: .5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1;
+}
+
+@media (max-width: 700px) {
+    .about-card {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding: 0 30px;
+
+    }
+
+ .about-para {
+        padding: 0 .1rem;
+        
+    } 
 }
