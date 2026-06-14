@@ -68,7 +68,7 @@ nav a:hover {
     width: 100%;
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-        url("https://images.unsplash.com/photo-1596495578065-6e0763fa1178");
+        url("./images/logo.png");
 
     background-repeat: no-repeat;
     background-position: center center;
@@ -106,15 +106,12 @@ nav a:hover {
     border: none;
     border-radius: 5px;
     transition: 0.3s;
-}
-
-
-.hero-button a {
     text-decoration: none;
     color: black;
     font-weight: 700;
     font-size: 1rem;
 }
+
 
 .btn:hover {
     background: #ffcc009a;
